@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <h2>Expense Tracker</h2>
+    <div class="container">
+        <div class="balance">
+            <div class="balance-display">
+                <div class="title">
+                    <h4>YOUR BALANCE</h4>
+                    <div class="currBal" id="currBal">
+                        $100
+                    </div>
+                </div>
+
+                <div class="income-expanse">
+                    <div class="income">
+                        <h3>INCOME</h3>
+                        <div class="realIncome" id="realIncome">$100</div>
+                    </div>
+                    <div class="expense">
+                        <h3>EXPENSE</h3>
+                        <div class="realExpense" id="realExpense">$50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="title">History</div>
+            <ul id="list">
+                <!-- <li class="minus">
+                    Cash <span>-$400</span>
+                    <button class="delete-btn">x</button>
+                </li> -->     
+            </ul>
+        </div>
+        <div class="transaction">
+            <div class="title">Add new transaction</div>
+            <div class="sTitle">Text</div>
+            <input type="text" id="description" placeholder="Enter text...">
+            <div class="sTitle">
+                Amount<br>
+                (negative - expense, positive - income)
+            </div>
+            <input type="number" id="amount" placeholder="Enter amount...">
+            <button id="Add">Add transaction</button>
+        </div>
+    </div>
+    <script src="tracker.js"></script>
+</body>
+
+</html>
